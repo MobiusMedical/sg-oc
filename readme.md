@@ -99,11 +99,14 @@ Each item must specify the SGQuestionID. The optionID is used for SG question ty
 
 
 
-SG and OC build/setup steps....notes
+### SG and OC build/setup steps....notes
+
 1. Each SG survey must contain three "Hidden Values" that are populated with URLVariables. Naming below must be used!
+```
 	- SubjectID = URLVariable  "ssid"
 	- EventID = URLVariable  "eid"
 	- EventNumber = URLVariable  "enum"
+```
 	
 2. Access the SG survey via link in OC CRF
 e.g. https://www.surveygizmo.com/s3/123456789/SURVEY-NAME?ssid=${studySubjectOID}&eid=${eventName}&enum=${eventOrdinal}

@@ -1,0 +1,26 @@
+<XML Name="CRF config" Description="Description of config" Version="v1.0.0">
+<ClinicalData StudyOID="S_DEFAULT1" OCURI="https://yourdomain.com/openclinica-ws/" OCUser="ocuser" OCPass="ocuserpw" SGURI="https://restapi.surveygizmo.com/v3/survey" SGUser="sguser" SGPass="sguserpw" SurveyID="surveyid">
+<StudyEventData>
+        <StudyEvents>
+		  <StudyEvent EventName="Baseline" EventOID="SE_BASELINE"/>
+		  <StudyEvent EventName="Visit 0" EventOID="SE_VISIT0"/>
+        </StudyEvents>
+        <FormData FormOID="F_CRF01_V1">
+                <ItemGroupData ItemGroupOID="IG_CRF01_G1" ItemGroupRepeatKey="1" TransactionType="Insert">
+                    <ItemData OCItemOID="I_CRF01_ITEM1" SGQuestionID="1" SGOptionID="" DataType="INT"/> 
+					<ItemData OCItemOID="I_CRF01_ITEM2" SGQuestionID="2" SGOptionID="" DataType="DATE" SG_DATE_Format="m/d/Y"/>
+					<ItemData OCItemOID="I_CRF01_ITEM3" SGQuestionID="3" SGOptionID="" DataType="DATE" SG_DATE_Format="d/m/Y"/>
+					<ItemData OCItemOID="I_CRF01_ITEM4" SGQuestionID="4" SGOptionID="" DataType="DATE" SG_DATE_Format="Y/m/d"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="IG_CRF02_G2" ItemGroupRepeatKey="1" TransactionType="Insert">
+                    <ItemData OCItemOID="I_CRF01_ITEM5" SGQuestionID="5" SGOptionID="" DataType="INT"/> 
+				</ItemGroupData>
+        </FormData>
+		<FormData FormOID="F_CRF02_V1">
+				<ItemGroupData ItemGroupOID="IG_CRF01_G3" ItemGroupRepeatKey="1" TransactionType="Insert">
+                    <ItemData OCItemOID="I_CRF02_ITEM1" SGQuestionID="6" SGOptionID="" DataType="INT"/> 
+				</ItemGroupData>
+        </FormData>
+</StudyEventData>
+</ClinicalData>
+</XML>

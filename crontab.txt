@@ -1,0 +1,2 @@
+MAILTO=name@email.com
+*/30 * * * * /home/user/startSGOC.sh

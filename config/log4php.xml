@@ -1,0 +1,14 @@
+<configuration xmlns="http://logging.apache.org/log4php/">
+    <appender name="fileAppender" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date %logger %-5level %msg%n" />
+        </layout>
+        <param name="file" value="logs/sg-oc-%s.log" />
+	<param name="datePattern" value="d-m-Y" />
+        <param name="append" value="true" />
+    </appender>
+    <root>
+        <level value="ALL" />
+        <appender_ref ref="fileAppender" />
+    </root>
+</configuration>

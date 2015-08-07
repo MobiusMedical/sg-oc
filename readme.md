@@ -93,11 +93,6 @@ You can verify if your crontab has been registered with Cron daemon by issueing 
 $ crontab -l 
 ```
 
-View the sample xml config file as template for configurations
-
-Each item must specify the SGQuestionID. The optionID is used for SG question types with option text answers. e.g. Select other from check box list and add text.
-
-
 
 ### SG and OC build/setup steps....notes
 

@@ -196,7 +196,7 @@ class RestWSConsumer {
 	 * @return SG REST call url
 	 */
 	private function get_SG_URL($clinical_data, $filter = array()) {
-		$user_auth_param = 'user:pass=' . $clinical_data->get_SG_username () . ':' . $clinical_data->get_SG_password ();
+		$user_auth_param = 'api_token=' . $clinical_data->get_SG_username () . '&api_token_secret=' . $clinical_data->get_SG_password ();
 		$url = $clinical_data->get_SG_URI () . '/' . $clinical_data->get_survey_ID () . '/' . self::SURVEY_RESPONSE_URL_SEG . '?' . $user_auth_param;
 		
 		$filter_sub_url = '';

@@ -1,3 +1,5 @@
+Version: 1.0.0
+
 # Prerequisites
 
 Requires a https://www.surveygizmo.com/ account with API access. (Use API Version 3)
